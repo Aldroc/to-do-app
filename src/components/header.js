@@ -16,7 +16,7 @@ class Header extends Component{
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-12 col-sm-4">
-                            <h4>You currently have "0" tasks</h4>
+                            <h5>You currently have "0" tasks</h5>
                         </div>
                     </div>
                 </div>
