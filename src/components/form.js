@@ -22,9 +22,9 @@ class TaskForm extends Component{
     render(){
         return(
             <div className="container">
-                {this.state.renderComponent ? <TaskList taskName={this.state.task} /> : null}
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-4">
+                        {this.state.renderComponent ? <TaskList taskName={this.state.task} /> : null}
                         <form>
                             <input placeholder="Enter Task" type="text" id="taskInput" onChange={this.setTask}/>
                             <button type="button" onClick={this.handleClick.bind(this)}>Submit</button>
