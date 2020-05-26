@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import TaskList from './taskList';
 
 class TaskForm extends Component{
     constructor(props){
         super(props);
         this.state={
-            task: ''
+            task: '',
+            renderComponent: 'false'
         }
     }
     setTask(e){
@@ -12,11 +14,15 @@ class TaskForm extends Component{
         window.$currentTask=e.target.value;
     }
     handleClick(){
-        this.setState({ task: window.$currentTask });
+        this.setState({
+            task: window.$currentTask,
+            renderComponent: 'true'
+        });
     }
     render(){
         return(
             <div className="container">
+                {this.state.renderComponent ? <TaskList taskName={this.state.task} /> : null}
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-4">
                         <form>
