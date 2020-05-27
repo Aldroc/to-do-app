@@ -7,7 +7,6 @@ class TaskList extends Component{
         super(props);
         this.state={
             status: 'false',
-
         }
     }
     render(){
