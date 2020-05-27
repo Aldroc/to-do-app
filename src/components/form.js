@@ -5,7 +5,9 @@ class TaskForm extends Component{
     constructor(props){
         super(props);
         this.state={
-            task: '',
+            task: [
+                
+            ],
             renderComponent: 'false'
         }
     }
@@ -14,8 +16,10 @@ class TaskForm extends Component{
         window.$currentTask=e.target.value;
     }
     handleClick(){
+        var newStateArray=this.state.task.slice();
+        newStateArray.push(window.$currentTask);
         this.setState({
-            task: window.$currentTask,
+            task: newStateArray,
             renderComponent: 'true'
         });
     }
@@ -24,7 +28,9 @@ class TaskForm extends Component{
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-4">
-                        {this.state.renderComponent ? <TaskList taskName={this.state.task} /> : null}
+                        {this.state.task.map(taskItem =>(
+                            this.state.renderComponent ? <TaskList taskName={taskItem} /> : null
+                        ))}
                         <form>
                             <input placeholder="Enter Task" type="text" id="taskInput" onChange={this.setTask}/>
                             <button type="button" onClick={this.handleClick.bind(this)}>Submit</button>

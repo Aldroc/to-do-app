@@ -4,6 +4,9 @@ import { Jumbotron } from 'reactstrap';
 class Header extends Component{
     constructor(props){
         super(props);
+        this.state={
+            count: window.$taskCount
+        }
     }
     render(){
         return(

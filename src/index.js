@@ -7,7 +7,6 @@ import * as serviceWorker from './serviceWorker';
 
 window.$currentTask='';
 
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
