@@ -13,11 +13,9 @@ class TaskList extends Component{
     render(){
         return(
             <div className="container">
-                <div className="row">
-                    <div className="col-12 col-sm-4">
-                        <input type="text" defaultValue={this.props.taskName} disabled={this.state.status} />
-                    </div>
-                </div>
+                <input type="text" defaultValue={this.props.taskName} disabled={this.state.status} />
+                <button type="button"><FontAwesomeIcon icon={faTrash} /></button>
+                <button type="button"><FontAwesomeIcon icon={faPen} /></button>
             </div>
         );
     }
