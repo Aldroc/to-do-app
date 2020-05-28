@@ -8,8 +8,7 @@ class TaskList extends Component{
         this.deleteClick=this.deleteClick.bind(this);
         this.editClick=this.editClick.bind(this);
         this.state={
-            inputStatus: 'false',
-            buttonStatus: 'true'
+            inputStatus: 'true'
         }
     }
     deleteClick(){
@@ -23,7 +22,7 @@ class TaskList extends Component{
             <div className="container">
                 <input type="text" defaultValue={this.props.taskName} disabled={this.state.inputStatus} />
                 <button type="button"><FontAwesomeIcon icon={faTrash} onClick={this.deleteClick}/></button>
-                <button type="button" disabled={this.state.buttonStatus} onClick={this.editClick}><FontAwesomeIcon icon={faPen} /></button>
+                <button type="button" onClick={this.editClick}><FontAwesomeIcon icon={faPen} /></button>
             </div>
         );
     }
