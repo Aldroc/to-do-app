@@ -11,4 +11,6 @@ Implementing task as array worked like a charm! Now all that is left to be sorte
 
 #### 28/05
 
-Tons of problems have now risen. So much that I don't want to document them. 
+Tons of problems have now arisen. So much that I don't want to document them. 
+
+No progress to be recorded either.

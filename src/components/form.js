@@ -5,9 +5,6 @@ class TaskForm extends Component{
     constructor(props){
         super(props);
         this.state={
-            task: [
-                
-            ],
             renderComponent: 'false'
         }
     }
@@ -16,19 +13,20 @@ class TaskForm extends Component{
         window.$currentTask=e.target.value;
     }
     handleClick(){
-        var newStateArray=this.state.task.slice();
+        var newStateArray=window.$taskArray.slice();
         newStateArray.push(window.$currentTask);
         this.setState({
-            task: newStateArray,
             renderComponent: 'true'
         });
+        window.$taskArray=newStateArray;
     }
     render(){
+        var currentTaskArray=window.$taskArray.slice();
         return(
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-4">
-                        {this.state.task.map(taskItem =>(
+                        {currentTaskArray.map(taskItem =>(
                             this.state.renderComponent ? <TaskList taskName={taskItem} /> : null
                         ))}
                     </div>
