@@ -8,7 +8,7 @@ class TaskList extends Component{
         this.deleteClick=this.deleteClick.bind(this);
         this.editClick=this.editClick.bind(this);
         this.state={
-            inputStatus: 'true'
+            inputStatus: true
         }
     }
     deleteClick(){

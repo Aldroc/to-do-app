@@ -17,4 +17,9 @@ No progress to be recorded either.
 
 #### 29/05
 
-Implemented task as a global array successfully. What to do with it is still in the air.
+Implemented task as a global array successfully. What to do with it is still in the air. The input field disable/enable problem has been worked out and dealt with.
+
+The splice method is being considered for deleting task array element (which is a job for the deleteClick() function in taskList component). 
+
+A way of forcibly unmounting a component is yet to be found, which is the main reason for delay in implementing deleteClick() method. **High Priority**. 
+Also editing an array element at a particular index also needs to be figured out for the implementation of the editClick() method. 
