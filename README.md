@@ -14,3 +14,7 @@ Implementing task as array worked like a charm! Now all that is left to be sorte
 Tons of problems have now arisen. So much that I don't want to document them. 
 
 No progress to be recorded either.
+
+#### 29/05
+
+Implemented task as a global array successfully. What to do with it is still in the air.
