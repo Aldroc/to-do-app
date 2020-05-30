@@ -7,6 +7,7 @@ import * as serviceWorker from './serviceWorker';
 
 window.$currentTask='';
 window.$taskArray=[];
+window.$taskCount=-1;
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TaskList from './taskList';
+import RenderTaskList from './renderTaskList';
 
 class TaskForm extends Component{
     constructor(props){
@@ -21,14 +21,11 @@ class TaskForm extends Component{
         window.$taskArray=newStateArray;
     }
     render(){
-        var currentTaskArray=window.$taskArray.slice();
         return(
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12 col-sm-4">
-                        {currentTaskArray.map(taskItem =>(
-                            this.state.renderComponent ? <TaskList taskName={taskItem} /> : null
-                        ))}
+                        {this.state.renderComponent ? <RenderTaskList /> : null}
                     </div>
                 </div>
                 <div className="row justify-content-center">
