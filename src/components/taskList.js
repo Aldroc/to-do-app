@@ -15,11 +15,7 @@ class TaskList extends Component{
         }
     }
     deleteClick(){
-        var newTaskArray=this.state.currentTaskArray.slice();
-        console.log(newTaskArray.length);
-        this.setState({
-            renderComponent: true
-        });
+    
     }
     editClick(){
         
@@ -27,8 +23,6 @@ class TaskList extends Component{
     render(){
         return(
             <div>
-                {this.state.renderComponent ? <RenderTaskList /> : null}
-                {this.state.renderComponent ? this.setState({renderComponent: false}) : null}
                 <input type="text" defaultValue={this.props.taskName} disabled={this.state.inputStatus} />
                 <button type="button"><FontAwesomeIcon icon={faTrash} onClick={this.deleteClick}/></button>
                 <button type="button" onClick={this.editClick}><FontAwesomeIcon icon={faPen} /></button>

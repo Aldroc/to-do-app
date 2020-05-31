@@ -21,5 +21,10 @@ Implemented task as a global array successfully. What to do with it is still in 
 
 The splice method is being considered for deleting task array element (which is a job for the deleteClick() function in taskList component). 
 
-A way of forcibly unmounting a component is yet to be found, which is the main reason for delay in implementing deleteClick() method. **High Priority**. 
+A way of forcibly unmounting a component is yet to be found, which is the main reason for delay in implementing deleteClick() method. **High Priority**.
+
 Also editing an array element at a particular index also needs to be figured out for the implementation of the editClick() method. 
+
+#### 31/05
+
+Was unable to log yesterday, though nothing of event was achieved. A way to splice the global task array was discovered but unable to apply it in a meaningful way. Trying to re-render the array by using another component for the rendering failed spectacularly. So still stuck at trying to unmount a component.
