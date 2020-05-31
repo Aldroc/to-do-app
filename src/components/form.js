@@ -5,7 +5,7 @@ class TaskForm extends Component{
     constructor(props){
         super(props);
         this.state={
-            renderComponent: 'false'
+            renderComponent: false
         }
     }
     setTask(e){
@@ -16,7 +16,7 @@ class TaskForm extends Component{
         var newStateArray=window.$taskArray.slice();
         newStateArray.push(window.$currentTask);
         this.setState({
-            renderComponent: 'true'
+            renderComponent: true
         });
         window.$taskArray=newStateArray;
     }

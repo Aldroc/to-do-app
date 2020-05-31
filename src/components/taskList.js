@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faPen, faCheck } from '@fortawesome/free-solid-svg-icons';
-import RenderTaskList from './renderTaskList';
 
 class TaskList extends Component{
     constructor(props){
@@ -19,6 +18,7 @@ class TaskList extends Component{
     const arrayIndex=taskArray.length-1;
     window.$taskArray.splice(arrayIndex,1);
     this.setState({ renderComponent: false });
+    {console.log(window.$taskArray.length)}
     }
     editClick(){
         

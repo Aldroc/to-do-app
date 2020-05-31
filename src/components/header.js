@@ -5,7 +5,7 @@ class Header extends Component{
     constructor(props){
         super(props);
         this.state={
-            count: window.$taskCount
+            count: window.$taskArray.length
         }
     }
     render(){
@@ -15,11 +15,6 @@ class Header extends Component{
                     <div className="row justify-content-center">
                         <div className="col-12 col-sm-2">
                            <h2>Tasks</h2>
-                        </div>
-                    </div>
-                    <div className="row justify-content-center">
-                        <div className="col-12 col-sm-4">
-                            <h5>You currently have "0" tasks</h5>
                         </div>
                     </div>
                 </div>
