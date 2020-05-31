@@ -28,3 +28,5 @@ Also editing an array element at a particular index also needs to be figured out
 #### 31/05
 
 Was unable to log yesterday, though nothing of event was achieved. A way to splice the global task array was discovered but unable to apply it in a meaningful way. Trying to re-render the array by using another component for the rendering failed spectacularly. So still stuck at trying to unmount a component.
+
+**A simple conditional statement helped in unmounting the component!!** Not exactly unmounting but it does the job. A new problem that has been observed is that to enter a new element after deleting requires submitting twice. Need to figure out what is going wrong...
