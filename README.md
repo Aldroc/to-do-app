@@ -36,3 +36,7 @@ Suspecting the renderComponent state of taskList component to be the culprit. Ap
 #### 1/06
 
 Not sure but app seems to work fine except for the double click required to submit a new item right after deleting. The strange behaviour not encountered. Weird alright.
+
+Don't know what exactly is causing it, but the weird behaviour exists. editCick function written successfully though! One good takeaway. Only the strange behaviour and the double clicking submit button problems exist. Have no idea how to go around fixing them though to be honest :(
+
+The prime suspect is still the deleteClick function.    
