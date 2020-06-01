@@ -32,3 +32,7 @@ Was unable to log yesterday, though nothing of event was achieved. A way to spli
 **A simple conditional statement helped in unmounting the component!!** Not exactly unmounting but it does the job. A new problem that has been observed is that to enter a new element after deleting requires submitting twice. Need to figure out what is going wrong...
 
 Suspecting the renderComponent state of taskList component to be the culprit. App behaves strangely when deleteClick is called occasionally. That too is supposedly being caused by the renderComponent state. Not entirely sure of any of it though.
+
+#### 1/06
+
+Not sure but app seems to work fine except for the double click required to submit a new item right after deleting. The strange behaviour not encountered. Weird alright.
